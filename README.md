@@ -3,8 +3,8 @@ Nombre del Proyecto.
 Plataforma de streaming Musical
 
 
-Intregantes.
+Integrantes.
 Ganda Pulgarin Aaron adayr
 Pastrano Valadez Edgar Antonio
-Velázquez Talavera Alejandro
+Velazquez Talavera Alejandro
 
