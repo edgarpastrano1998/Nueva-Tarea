@@ -1,4 +1,4 @@
-Actividad 4.1
+Actividad 4.1 Arquitectura de sofware.
 Métodos HTTP Semánticos
 En la arquitectura REST, los verbos HTTP no son simples comandos, sino que definen la semántica (el significado) de la acción que se quiere realizar sobre un recurso (como un usuario, un producto, etc.).
 
