@@ -48,4 +48,3 @@ erDiagram
     USUARIO |o--o{ PLAYLIST : "crea"
     PLAYLIST ||--o{ PLAYLIST_CANCION : "contiene"
     CANCION ||--o{ PLAYLIST_CANCION : "aparece_en"
-
