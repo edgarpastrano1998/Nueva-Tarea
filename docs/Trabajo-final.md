@@ -27,7 +27,7 @@ Definen cómo debe comportarse el sistema (restricciones y propiedades del siste
 
 ---
 
-# Sección 2: Vista Estructural (C4)
+### Sección 2: Vista Estructural (C4)
 
 ## Aplicación de Streaming Musical
 El siguiente documento presenta la arquitectura de una aplicación de streaming musical utilizando el Modelo C4. Se desarrollan los niveles 1 y 2 para representar el contexto general del sistema y los contenedores principales de la solución.
@@ -49,12 +49,11 @@ flowchart LR
 ### Sección 3: Vista de Fronteras y Contratos
 
    flowchart LR
-U["Persona<br>Usuario de la aplicación"]
-S["Sistema de Streaming Musical<br>Permite escuchar música, descargar canciones y administrar listas de reproducción"]
-EXT["Sistema Externo<br>Servicio de autenticación y gestión de cuentas"]
-
-U -->|"Escucha música y administra playlists"| S
-S -->|"Valida credenciales de usuario"| EXT
+    U["Persona<br>Usuario"]
+    F["Frontend App Móvil<br>[Flutter]<br>Interfaz gráfica para reproducir música y administrar descargas"]
+    B["Backend API<br>[Python / Flask]<br>Procesa autenticación, playlists y gestión de canciones"]
+    DB["Base de Datos<br>[MySQL]<br>Almacena usuarios, playlists y registros"]
+    ST["Almacenamiento Local<br>[Android/iOS Storage]<br>Guarda canciones descargadas en el dispositivo"]
 
     U -->|"Interactúa con la aplicación"| F
     F -->|"Envía solicitudes de login y música [HTTPS/JSON]"| B
