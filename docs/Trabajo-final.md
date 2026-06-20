@@ -1,4 +1,5 @@
 # Sección 1: Estrategia y Alcance
+
 ## Proyecto: Plataforma para reproducir y descargar música
 
 **Atributo:** Funcionalidad
@@ -18,6 +19,7 @@
 | **RF-05** | Streaming en Segundo Plano | La aplicación debe seguir reproduciendo música incluso si la pantalla del dispositivo se apaga o el usuario minimiza la app. |
 
 ### Requerimientos No Funcionales (RNF)
+
 Definen cómo debe comportarse el sistema (restricciones y propiedades del sistema).
 
 * **RNF-01 (Disponibilidad):** El servicio de streaming debe tener un tiempo de actividad (uptime) del 99.5% durante el mes.
@@ -27,9 +29,10 @@ Definen cómo debe comportarse el sistema (restricciones y propiedades del siste
 
 ---
 
-### Sección 2: Vista Estructural (C4)
+# Sección 2: Vista Estructural (C4)
 
 ## Aplicación de Streaming Musical
+
 El siguiente documento presenta la arquitectura de una aplicación de streaming musical utilizando el Modelo C4. Se desarrollan los niveles 1 y 2 para representar el contexto general del sistema y los contenedores principales de la solución.
 
 ### Nivel 2 — Diagrama de Contenedores
@@ -46,9 +49,10 @@ flowchart LR
     F -->|"Envía solicitudes de login y música [HTTPS/JSON]"| B
     B -->|"Consulta y almacena información [SQL]"| DB
     F -->|"Guarda canciones descargadas [File System API]"| ST
+
 ### Sección 3: Vista de Fronteras y Contratos
 
-   flowchart LR
+  flowchart LR
     U["Persona<br>Usuario"]
     F["Frontend App Móvil<br>[Flutter]<br>Interfaz gráfica para reproducir música y administrar descargas"]
     B["Backend API<br>[Python / Flask]<br>Procesa autenticación, playlists y gestión de canciones"]
