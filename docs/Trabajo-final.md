@@ -81,7 +81,7 @@ Almacenamiento Local,Android/iOS Storage,Guardar canciones descargadas,Memoria d
 
 ---
 
-## Proyecto
+### Sección 4: Vista de Persistencia
 **Plataforma para reproducir y descargar música**
 
 ---
